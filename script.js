@@ -1,6 +1,6 @@
-// const merah = document.getElementsByTagName('input')[0];
-// const hijau = document.getElementsByTagName('input')[1];
-// const biru = document.getElementsByTagName('input')[2];
+const merah = document.getElementsByTagName('input')[0];
+const hijau = document.getElementsByTagName('input')[1];
+const biru = document.getElementsByTagName('input')[2];
 
 
 // function ubahwarna(r, g, b) {
@@ -32,8 +32,20 @@
 const pil = document.querySelectorAll('input');
 pil.forEach(function(p) {
     p.addEventListener('input', function() {
-       const a = {p.className;,p.value}
-       console.log(a);
-       document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')';
+        const a = p.className;
+        
+        // const g
+        // const b
+        
+        (a == 'merah')? 
+        r = p.value
+        // g = hijau
+        // b = biru
+        :false;
+        (a == 'hijau')? g = p.value :false;
+        (a == 'biru')? b = p.value :false;
+
+        console.log(r);
+        document.body.style.backgroundColor = 'rgb('+ r +',100,100)';
     });
 });
