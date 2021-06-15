@@ -12,10 +12,10 @@ body{
 
 
 .kotak{
-    width: 100px;
-    height: 100px;
-    margin: 30px auto;
-    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    margin: 20px auto;
+    border-radius: 5px;
 }
 .red{
     background-color: red;
